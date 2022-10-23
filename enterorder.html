@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="cz">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="./components/css/main.css">
+        <script src="https://kit.fontawesome.com/9b0286b6f2.js" crossorigin="anonymous"></script>
+    </head>
+    <header>
+        <img class="backbtn" src="./components/images/back.webp" height="40px" onclick="location.href='./index.html';" style="filter: invert(1);">
+        <nav>
+            <h1 style="color: whitesmoke;">Sample Text</h1>
+            <i class="fa-solid fa-cart-shopping shop-cart" style="color: white;"></i>
+        </nav>
+    </header>
+    <body>
+        <div class="container">
+            
+            <div class="card">
+                <img class="card--avatar" src="./components/images/taro.jpg" />
+                <h1 class="card--title">Taro Milk Tea</h1>
+                <a class="card--link" id="1" >Order &nbsp; <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="card">
+                <img class="card--avatar" src="./components/images/passion.jpg" />
+                <h1 class="card--title">Passion Fruit Tea</h1>
+                <a class="card--link" id="2" >Order &nbsp; <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="card">
+                <img class="card--avatar" src="./components/images/peach.jpg" />
+                <h1 class="card--title">Peach Fruit Tea</h1>
+                <a class="card--link" id="3" >Order &nbsp; <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="card">
+                <img class="card--avatar" src="./components/images/other.png" style="filter: invert(1);"/>
+                <h1 class="card--title">Other</h1>
+                <a class="card--link" id="4" >Order &nbsp; <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                      <div class="modal-body">
+                        <span class="close" onclick="close1();">&times;</span>
+                        <img class="modal-image" src="./components/images/tarosqr.jpg" width="30%">
+                        <h1 class="modal-desc">Taro Milk Tea</h1>
+                        <p class="modal-desc">A Taro flavoured milk drink with tapioca pearls or other add-ins.</p>
+                        <br>
+                        <h3 class="modal-desc">Price: &nbsp; Free</h3>
+                        <br>
+                        <br>
+                        <button class="modal-desc modal-ordbtn" id="addcart1">&nbsp;Add to cart &nbsp; <i class="fa-solid fa-cart-shopping"></i>&nbsp;</button>
+
+                      </div>
+                </div>
+            </div>
+
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                      <div class="modal-body">
+                        <span class="close" onclick="close2();">&times;</span>
+                        <img class="modal-image" src="./components/images/passionsqr.jpg" width="30%">
+                        <h1 class="modal-desc">Passion Fruit Tea</h1>
+                        <p class="modal-desc">A Passion Fruit infused drink with jelly or other add-ins.</p>
+                        <br>
+                        <h3 class="modal-desc">Price: &nbsp; Free</h3>
+                        <br>
+                        <br>
+                        <button class="modal-desc modal-ordbtn" id="addcart2">&nbsp;Add to cart &nbsp; <i class="fa-solid fa-cart-shopping"></i>&nbsp;</button>
+
+                      </div>
+                </div>
+            </div>
+
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                      <div class="modal-body">
+                        <span class="close" onclick="close3();">&times;</span>
+                        <img class="modal-image" src="./components/images/peachsqr.jpg" width="30%">
+                        <h1 class="modal-desc">Peach Fruit Tea</h1>
+                        <p class="modal-desc">A Peach infused drink with jelly or other add-ins.</p>
+                        <br>
+                        <h3 class="modal-desc">Price: &nbsp; Free</h3>
+                        <br>
+                        <br>
+                        <button class="modal-desc modal-ordbtn" id="addcart3">&nbsp;Add to cart &nbsp; <i class="fa-solid fa-cart-shopping"></i>&nbsp;</button>
+
+                      </div>
+                </div>
+            </div>
+
+            <div id="modal4" class="modal">
+                <div class="modal-content">
+                      <div class="modal-body">
+                        <span class="close" onclick="close4();">&times;</span>
+                        <img class="modal-image" src="./components/images/tarosqr.jpg" width="30%">
+                        <h1 class="modal-desc">Other</h1>
+                        <p class="modal-desc">An item which is not listed on our site.</p>
+                        <br>
+                        <h3 class="modal-desc">Price: &nbsp; Free</h3>
+                        <br>
+                        <br>
+                        <button class="modal-desc modal-ordbtn" id="addcart3">&nbsp;Add to cart &nbsp; <i class="fa-solid fa-cart-shopping"></i>&nbsp;</button>
+
+                      </div>
+                </div>
+            </div>
+            <form action="action_page.php" method="post">
+                First name:<br>
+                <input type="text" name="firstname" value=""><br>
+                Last name:<br>
+                <input type="text" name="lastname" value=""><br><br>
+                <input type="submit" value="Submit">
+              </form>
+              
+        </div>
+        <script src="./components/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+{
+    "name": "DoNaMar Shop",
+    "short_name": "DoNaMarShop",
+    "start": "index.html",
+    "display": "standalone",
+    "background_color": "#C6F8E5",
+    "theme_color": "#934ecc",
+    "orientation": "portrait-primary",
+    "icons": [
+        
+    ]
+}
